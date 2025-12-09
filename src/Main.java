@@ -39,8 +39,29 @@ int index =  name.indexOf(" ");
         System.out.println(str.replace("apple", "banana"));
         System.out.println(str.replaceFirst("apple", "banana"));
         System.out.println(str.replace("a", ""));
-        
+
+
+
+        if (firstName.equals(lastName)){
+
+        }
     }
+
+  public static boolean isEquals(String str1, String str2) {
+        boolean isEquals = true;
+        if (str1.length()==str2.length()){
+            for (int i = 0; i < str1.length() ; i++) {
+                 if (str1.charAt(i) != str2.charAt(i)){
+                     isEquals = false;
+                     break;
+                 }
+            }
+        }else {
+            isEquals = false;
+        }
+     return isEquals;
+  }
+
 
 
 
